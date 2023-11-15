@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+let names = [
+    'john',
+    'marry',
+    'pete',
+    'vasilii',
+    'andy',
+];
+
+// Print all names besides the first and last names
+for (let i = 1; i < names.length - 1; i++) {
+    console.log(names[i]);
+}
+
+let nameToFind = prompt("Name to find: ");
+
+// Find a specific name in the array
+let found = false;
+for (let i = 0; i < names.length; i++) {
+    if (names[i] === nameToFind) {
+        console.log(`${nameToFind} found!`);
+        found = true;
+        break; 
+    }
+}
+
+// If the name is not found
+if (!found) {
+    console.log(`${nameToFind} not found.`);
+}
+
+    </script>
+</body>
+</html>
